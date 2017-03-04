@@ -1,0 +1,10 @@
+HelloIntent Hello
+HelloIntent Hello World
+HelloIntent Hello Everybody
+HelloIntent Hello Everyone
+HelloIntent Hello Students
+HelloIntent Hi
+HelloIntent Hi World
+HelloIntent Hi Everybody
+HelloIntent Hi Everyone 
+HelloIntent Hi Students
