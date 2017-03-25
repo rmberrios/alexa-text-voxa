@@ -4,7 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const routes = require('./routes/skill');
-const config = require('../config');
 
 const app = express();
 

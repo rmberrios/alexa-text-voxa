@@ -1,7 +1,9 @@
 'use strict';
 
+const _ = require('lodash');
 const skill = require('../skill/MainStateMachine');
 const expect = require('chai').expect;
+const views = require('../skill/views');
 
 describe('Skill', () => {
   it('should reply with Intent.Launch', () => {
@@ -21,7 +23,7 @@ describe('Skill', () => {
 
     return skill.execute(event)
       .then((reply) => {
-        expect(reply.toJSON().response.outputSpeech.ssml).to.equal('<speak>Hello! It seems you have not gone through the account linking process. I just sent you a card to the Alexa app so you enter your credentials.</speak>');
+        expect(reply.toJSON().response.outputSpeech.ssml).to.contain(_.get(views, 'Intent.Hello.tell'));
       });
   });
 });
